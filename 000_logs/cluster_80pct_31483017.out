@@ -1,0 +1,132 @@
+==================================================
+CD-HIT Clustering (80% Identity Filtered Epitopes)
+==================================================
+Start time: Thu Jan 29 14:40:10 EET 2026
+Job ID: 31483017
+
+Step 1: Preparing FASTA from 80% filtered epitopes
+==================================================
+Loading: /scratch/project_2009813/JOHANNA/II_potential_epitopes/003_result_comparisons/epitopes_PASSED_human_filter_80pct.txt
+Total epitopes: 2,706
+After length filter (11-24 aa): 2,663
+Writing FASTA: /scratch/project_2009813/JOHANNA/II_potential_epitopes/004_cluster/clustering_data/epitopes_80pct.fasta
+✓ FASTA created with 2,663 sequences
+✓ IMPORTANT: Index mapping saved: /scratch/project_2009813/JOHANNA/II_potential_epitopes/004_cluster/clustering_data/epitope_index_mapping.txt
+  This file contains source proteins needed for alignments!
+
+Step 2: Running CD-HIT
+======================
+Running CD-HIT with 80% identity threshold...
+================================================================
+Program: CD-HIT, V4.8.1 (+OpenMP), Aug 14 2019, 14:52:16
+Command: cd-hit -i
+         /scratch/project_2009813/JOHANNA/II_potential_epitopes/004_cluster/clustering_data/epitopes_80pct.fasta
+         -o
+         /scratch/project_2009813/JOHANNA/II_potential_epitopes/004_cluster/clustering_data/epitopes_80pct_clustered
+         -c 0.8 -n 4 -d 0 -T 4 -M 0 -g 1
+
+Started: Thu Jan 29 14:41:50 2026
+================================================================
+                            Output                              
+----------------------------------------------------------------
+Your word length is 4, using 5 may be faster!
+total seq: 2663
+longest and shortest : 23 and 11
+Total letters: 47839
+Sequences have been sorted
+
+Approximated minimal memory consumption:
+Sequence        : 0M
+Buffer          : 4 X 10M = 42M
+Table           : 2 X 3M = 6M
+Miscellaneous   : 0M
+Total           : 48M
+
+Table limit with the given memory limit:
+Max number of representatives: 1500000
+Max number of word counting entries: 22316812
+
+# comparing sequences from          0  to        443
+---------- new table with      214 representatives
+# comparing sequences from        443  to        813
+...................45.5%46.7%47.4%47.8%48.4%49.1%49.6%50.1%50.5%51.4%51.9%52.5%52.8%53.1%53.5%53.8%54.1%54.6%55.1%55.5%56.2%56.6%57.2%57.5%57.8%58.5%58.9%59.7%60.2%60.8%61.2%62.0%62.3%62.8%63.4%63.7%64.3%64.6%65.0%65.6%66.1%66.5%66.9%67.3%67.6%68.0%68.5%69.2%69.6%70.0%70.6%71.0%71.4%72.0%72.4%72.7%73.0%73.6%74.2%74.5%75.0%75.3%76.0%76.3%76.8%77.4%77.9%78.3%78.9%79.3%79.7%80.2%80.8%81.4%81.9%82.5%83.4%83.6%83.9%84.4%85.0%85.5%85.9%86.3%86.7%87.2%87.6%88.0%88.4%89.0%89.4%89.9%90.2%90.5%91.1%91.6%91.9%92.7%93.2%93.8%94.8%95.2%95.5%95.8%96.6%97.5%98.1%98.6%99.3%99.6%99.8%---------- new table with       44 representatives
+# comparing sequences from        813  to       1121
+.....................68.5%70.8%72.1%72.9%73.8%74.5%75.8%76.8%77.7%78.7%79.7%81.6%82.2%83.4%83.9%84.9%85.8%86.3%87.2%87.8%89.0%89.8%90.5%91.1%91.9%93.0%93.9%95.2%95.7%97.7%98.4%99.4%---------- new table with       28 representatives
+# comparing sequences from       1121  to       1378
+...................79.3%82.2%85.4%87.1%88.9%91.3%93.8%95.8%97.9%---------- new table with       18 representatives
+# comparing sequences from       1378  to       1592
+...................96.0%---------- new table with       16 representatives
+# comparing sequences from       1592  to       1770
+....................76.5%77.8%79.4%80.1%81.6%82.1%83.1%83.9%84.8%85.8%86.5%87.3%88.2%89.3%90.1%91.2%92.0%92.9%93.8%95.0%96.0%97.8%98.6%---------- new table with        9 representatives
+# comparing sequences from       1770  to       2663
+.....................---------- new table with       88 representatives
+
+     2663  finished        417  clusters
+
+Approximated maximum memory consumption: 48M
+writing new database
+writing clustering information
+program completed !
+
+Total CPU time 0.08
+✓ CD-HIT completed successfully
+
+Step 3: SAFE Representative Selection + Species Aggregation
+==========================================================
+Loading index mapping: /scratch/project_2009813/JOHANNA/II_potential_epitopes/004_cluster/clustering_data/epitope_index_mapping.txt
+Parsing CD-HIT clusters: /scratch/project_2009813/JOHANNA/II_potential_epitopes/004_cluster/clustering_data/epitopes_80pct_clustered.clstr
+Found 417 clusters
+
+Processing clusters with SAFE representative selection...
+Priority: 1) Lowest human identity, 2) IEDB bonus, 3) Most proteins
+
+
+✓ Saved: /scratch/project_2009813/JOHANNA/II_potential_epitopes/004_cluster/epitope_clusters_80pct_summary.txt
+
+Cluster statistics:
+  Total clusters: 417
+  Singletons: 125
+  Multi-member: 292
+  Max species: 10
+  Mean species: 2.1
+
+Human similarity in representatives (SHOULD BE MUCH BETTER!):
+  Mean identity: 74.2%
+  Median identity: 75.0%
+  Max identity: 78.9%
+  Min identity: 0.0%
+  ≥60%: 409 (98.1%)
+  ≥70%: 396 (95.0%)
+  ≥75%: 350 (83.9%)
+  ≥80%: 0 (0.0%)
+
+Top 10 clusters by species breadth:
+  ERNTTIPTKRSETFTTADDN                - 10sp,  77.8% ID
+  DRRKAMLQDMAILTGGQVIS                - 10sp,  77.8% ID
+  QIEEATSDYDREKLQERVA                 -  9sp,  77.8% ID
+  TIRIPVHMIETINKLNRISRQML             -  9sp,  75.0% ID
+  ERTRDRVRVDIHTARPGIVI                -  8sp,  75.0% ID
+  ELKDKLQNMGAQMVKEVASK                -  8sp,  77.8% ID
+  DLNDLYRRVINRNNRLKRLLD               -  8sp,  75.0% ID
+  WSYGEVKKPETINYRTLKP                 -  7sp,  77.8% ID
+  DLNAPSIIVQNEKRMLQEAVD               -  7sp,  70.0% ID
+  ETFEAIEMAKEAGYTAVVSHR               -  7sp,  77.8% ID
+
+Step 4: Preserving clustering data
+==================================
+Keeping clustering_data directory (contains important files):
+  - epitope_index_mapping.txt (source proteins for alignments)
+  - CD-HIT cluster files
+  - FASTA files
+
+==================================================
+CLUSTERING COMPLETE!
+End time: Thu Jan 29 14:41:51 EET 2026
+==================================================
+
+Next steps:
+  1. Filter low-complexity sequences
+  2. Prioritize by species + low identity
+  3. Extract protein regions for top candidates
+  4. Manual alignment and selection
+==================================================

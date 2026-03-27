@@ -1,0 +1,82 @@
+==================================================
+Metaproteome Validation Analysis
+==================================================
+Start time: Sun Feb  8 20:11:39 EET 2026
+Job ID: 31705746
+
+Logging to: /scratch/project_2009813/JOHANNA/II_potential_epitopes/000_logs/20260208_201228_v2_30_metaproteome_validation.log
+================================================================================
+METAPROTEOME VALIDATION
+================================================================================
+Start time: 2026-02-08 20:12:28
+
+Input files:
+  Epitope clusters: /scratch/project_2009813/JOHANNA/II_potential_epitopes/006_metaproteome_validation/REFINED_TIER1_clusters.txt
+  Epitope FASTA: /scratch/project_2009813/JOHANNA/II_potential_epitopes/006_metaproteome_validation/refined_tier1_epitopes.fasta
+  Metaproteome FASTA: /scratch/project_2009813/JOHANNA/II_potential_epitopes/001_data/metaproteome_sequences.fa
+✓ All input files found
+
+Loaded 59 epitope clusters for validation
+Using temporary directory: /tmp/johannmu/31705746/tmpbry4cs4k
+
+============================================================
+EXACT STRING MATCHING
+============================================================
+Loaded 59 epitope sequences
+Loaded 2479 metaproteome sequences
+
+Exact matching results:
+  Found exact matches: 6/59 (10.2%)
+  Saved: /scratch/project_2009813/JOHANNA/II_potential_epitopes/006_metaproteome_validation/epitopes_exact_matching_results.txt
+
+============================================================
+BLAST MATCHING
+============================================================
+Creating BLAST database: /tmp/johannmu/31705746/tmpbry4cs4k/metaproteome_db
+✓ BLAST database created successfully
+Running BLAST search...
+✓ BLAST search completed successfully
+BLAST hits found: 694
+
+BLAST matching results:
+  Found BLAST matches: 59/59 (100.0%)
+  High identity (≥90%): 17
+  High coverage (≥80%): 49
+  Saved: /scratch/project_2009813/JOHANNA/II_potential_epitopes/006_metaproteome_validation/epitopes_blast_matching_results.txt
+
+================================================================================
+COMBINING RESULTS
+================================================================================
+
+Combined validation results:
+  Total epitopes validated: 59
+  Found in metaproteome: 59/59 (100.0%)
+    - Exact matches: 6
+    - BLAST only: 53
+    - Not found: 0
+
+✓ Saved combined results: /scratch/project_2009813/JOHANNA/II_potential_epitopes/006_metaproteome_validation/REFINED_TIER1_with_metaproteome_validation.txt
+
+Top 10 metaproteome-validated candidates:
+Sequence                            Sp  ID%    Detection    Abundance   
+-------------------------------------------------------------------------------------
+QSAESVASSAA                         1   0.0    BLAST_Only   0.0128      
+TIRIPVHMIETINKLNRISRQML             9   75.0   BLAST_Only   0.0011      
+ERNTTIPTKRSETFTTADDN                10  77.8   BLAST_Only   0.0049      
+DRRKAMLQDMAILTGGQVIS                10  77.8   BLAST_Only   0.0750      
+ANASKSKQATS                         3   60.0   BLAST_Only   0.0006      
+DLNAPSIIVQNEKRMLQEAVD               7   70.0   BLAST_Only   0.0209      
+ERTRDRVRVDIHTARPGIVI                8   75.0   BLAST_Only   0.0324      
+QIEEATSDYDREKLQERVA                 9   77.8   Exact_Match  0.0750      
+DLNDLYRRVINRNNRLKRLLD               8   75.0   BLAST_Only   0.0207      
+QITSAMQMVST                         2   60.0   BLAST_Only   0.0202      
+
+End time: 2026-02-08 20:12:34
+================================================================================
+METAPROTEOME VALIDATION COMPLETE
+================================================================================
+
+==================================================
+Metaproteome Validation Complete
+End time: Sun Feb  8 20:12:34 EET 2026
+==================================================

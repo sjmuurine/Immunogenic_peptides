@@ -1,0 +1,70 @@
+============================================
+IEDB Epitope BLAST with Full Headers
+Date: Wed Dec 17 17:50:38 EET 2025
+============================================
+
+Creating BLAST databases...
+
+
+Building a new DB, current time: 12/17/2025 17:50:39
+New DB name:   /scratch/project_2009813/JOHANNA/II_potential_epitopes/001_data/blast_db/anatomia_db
+New DB title:  /scratch/project_2009813/JOHANNA/II_potential_epitopes/001_data/ANATOMIA_bEVs_all_sequences.fa
+Sequence type: Protein
+Deleted existing Protein BLAST database named /scratch/project_2009813/JOHANNA/II_potential_epitopes/001_data/blast_db/anatomia_db
+Keep MBits: T
+Maximum file size: 3000000000B
+Adding sequences from FASTA; added 5899 sequences in 0.424133 seconds.
+
+
+
+
+Building a new DB, current time: 12/17/2025 17:50:41
+New DB name:   /scratch/project_2009813/JOHANNA/II_potential_epitopes/001_data/blast_db/literature_db
+New DB title:  /scratch/project_2009813/JOHANNA/II_potential_epitopes/001_data/literature_merged.fasta
+Sequence type: Protein
+Deleted existing Protein BLAST database named /scratch/project_2009813/JOHANNA/II_potential_epitopes/001_data/blast_db/literature_db
+Keep MBits: T
+Maximum file size: 3000000000B
+Adding sequences from FASTA; added 5091 sequences in 0.365353 seconds.
+
+
+Databases created successfully!
+
+BLASTing epitopes against ANATOMIA data...
+ANATOMIA BLAST completed!
+
+BLASTing epitopes against Literature data...
+Literature BLAST completed!
+
+Combining results...
+Combined results created!
+
+Filtering for high-quality matches (≥80% identity)...
+
+============================================
+BLAST RESULTS SUMMARY
+============================================
+
+ANATOMIA Dataset:
+  Total hits: 3627
+  High quality (≥80%): 3627
+
+Literature Dataset:
+  Total hits: 4086
+  High quality (≥80%): 1837
+
+Combined:
+  Total hits: 7713
+  High quality (≥80%): 5464
+
+============================================
+Output files with FULL HEADERS:
+  Combined: epitope_blast_COMBINED_fullheaders.txt
+  Combined HQ: epitope_blast_COMBINED_fullheaders_high_quality.txt
+  ANATOMIA: epitope_blast_ANATOMIA_fullheaders.txt
+  ANATOMIA HQ: epitope_blast_ANATOMIA_fullheaders_high_quality.txt
+  Literature: epitope_blast_LITERATURE_fullheaders.txt
+  Literature HQ: epitope_blast_LITERATURE_fullheaders_high_quality.txt
+============================================
+Analysis complete: Wed Dec 17 17:51:03 EET 2025
+============================================

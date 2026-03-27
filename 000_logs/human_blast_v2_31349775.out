@@ -1,0 +1,52 @@
+==================================================
+Human Proteome BLAST - All Epitopes
+==================================================
+Start time: Sat Jan 24 00:04:30 EET 2026
+Job ID: 31349775
+
+Input files:
+  FASTA: /scratch/project_2009813/JOHANNA/II_potential_epitopes/003_result_comparisons/all_epitopes_for_blast.fasta
+  ID mapping: /scratch/project_2009813/JOHANNA/II_potential_epitopes/003_result_comparisons/epitope_id_mapping.txt
+  BLAST DB: /scratch/project_2009813/JOHANNA/II_potential_epitopes/001_data/blast_db/human_proteome_db
+
+Total epitopes to BLAST: 218049
+
+Running BLAST against human proteome...
+  Parameters:
+    - E-value threshold: 1000 (permissive)
+    - Max target seqs: 100
+    - Threads: 8
+
+
+BLAST completed successfully!
+  Total hits: 21486321
+
+Adding header to BLAST results...
+  Created: /scratch/project_2009813/JOHANNA/II_potential_epitopes/003_result_comparisons/epitopes_vs_human_with_header.txt
+
+Mapping Query IDs to epitope sequences...
+  Loading ID mapping: /scratch/project_2009813/JOHANNA/II_potential_epitopes/003_result_comparisons/epitope_id_mapping.txt
+  Loading BLAST results: /scratch/project_2009813/JOHANNA/II_potential_epitopes/003_result_comparisons/epitopes_vs_human_with_header.txt
+  Mapping 21486321 BLAST hits...
+  All hits successfully mapped!
+  Saved: /scratch/project_2009813/JOHANNA/II_potential_epitopes/003_result_comparisons/epitopes_vs_human_ALL_hits.txt
+  Total rows: 21486321
+
+  Summary:
+    Unique epitopes with hits: 218035
+    Average hits per epitope: 98.5
+    Max identity: 100.0%
+    Max coverage: 100.0%
+
+Cleaning up temporary files...
+  Removed: /scratch/project_2009813/JOHANNA/II_potential_epitopes/003_result_comparisons/epitopes_vs_human_raw.txt
+
+==================================================
+BLAST Complete!
+End time: Sat Jan 24 01:06:11 EET 2026
+==================================================
+
+Output file: /scratch/project_2009813/JOHANNA/II_potential_epitopes/003_result_comparisons/epitopes_vs_human_ALL_hits.txt
+
+Next step: Run v2_03b_filter_human_similarity.py
+==================================================

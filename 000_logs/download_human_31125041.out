@@ -1,0 +1,18 @@
+============================================
+Downloading Human Proteome from UniProt
+Date: Fri Jan  9 17:54:24 EET 2026
+============================================
+Downloading Swiss-Prot human proteome...
+File size: 13665992 bytes
+============================================
+Download complete!
+Human proteome sequences: 20420
+File: /scratch/project_2009813/JOHANNA/II_potential_epitopes/001_data/human_proteome_swissprot.fasta
+============================================
+
+First 5 protein headers:
+>sp|A0A087X1C5|CP2D7_HUMAN Cytochrome P450 2D7 OS=Homo sapiens OX=9606 GN=CYP2D7 PE=1 SV=1
+>sp|A0A0B4J2F0|PIOS1_HUMAN Protein PIGBOS1 OS=Homo sapiens OX=9606 GN=PIGBOS1 PE=1 SV=1
+>sp|A0A0C5B5G6|MOTSC_HUMAN Mitochondrial-derived peptide MOTS-c OS=Homo sapiens OX=9606 GN=MT-RNR1 PE=1 SV=1
+>sp|A0A0K2S4Q6|CD3CH_HUMAN Protein CD300H OS=Homo sapiens OX=9606 GN=CD300H PE=1 SV=1
+>sp|A0A0U1RRE5|NBDY_HUMAN Negative regulator of P-body association OS=Homo sapiens OX=9606 GN=NBDY PE=1 SV=1

@@ -1,0 +1,86 @@
+Loaded modules:
+bamtools  2.5.2  environment loaded 
+bedtools  2.31.1  environment loaded 
+Bioperl  1.7.8  environment loaded 
+java  1.8.0_302  environment loaded 
+EMBOSS  6.5.7  environment loaded 
+BLAST  2.17.0  environment loaded 
+Bowtie  1.2.3  environment loaded 
+Bowtie2  2.5.3  environment loaded 
+BWA  0.7.18  environment loaded 
+cd-hit  4.8.1  environment loaded 
+clustalo  1.2.4  environment loaded 
+clustalw  2.1  environment loaded 
+cufflinks  2.2.1  environment loaded 
+diamond  2.1.16  environment loaded 
+EMBOSS  6.5.7  environment loaded 
+Exonerate  2.4.0  environment loaded 
+fastx-toolkit  0.0.14  environment loaded 
+hisat2  2.2.1  environment loaded 
+hmmer  3.4  environment loaded 
+itsx  1.1.3  environment loaded 
+kraken  2.17.0  environment loaded 
+krona  2.8.1  environment loaded 
+mafft  7.505  environment loaded 
+minimap2  2.28  environment loaded 
+Mummer  4.0.0brc1  environment loaded 
+muscle  5.1  environment loaded 
+SANSPANZ  3  environment loaded 
+Phylip  3.697  environment loaded 
+picard  2.27.5  environment loaded 
+prinseq  0.20.4  environment loaded 
+samtools  1.21  environment loaded 
+sratoolkit  3.0.0  environment loaded 
+stacks  2.65  environment loaded 
+star  2.7.11b  environment loaded 
+trimmomatic  0.39  environment loaded 
+samtools  1.16.1  environment loaded 
+Trinity 2.8.5  environment loaded 
+vcftools  0.1.17  environment loaded 
+Velvet 1.2.10  environment loaded 
+vsearch  2.22.1  environment loaded 
+wtdbg2  2.5  environment loaded 
+ 
+CFastaReader: Hyphens are invalid and will be ignored around line 1150
+CFastaReader: Hyphens are invalid and will be ignored around line 1266
+CFastaReader: Hyphens are invalid and will be ignored around line 822
+CFastaReader: Hyphens are invalid and will be ignored around line 1290
+CFastaReader: Hyphens are invalid and will be ignored around line 1346
+CFastaReader: Hyphens are invalid and will be ignored around line 1348
+CFastaReader: Hyphens are invalid and will be ignored around line 1350
+CFastaReader: Hyphens are invalid and will be ignored around line 1352
+CFastaReader: Hyphens are invalid and will be ignored around line 1354
+CFastaReader: Hyphens are invalid and will be ignored around line 1356
+CFastaReader: Hyphens are invalid and will be ignored around line 1324
+CFastaReader: Hyphens are invalid and will be ignored around line 894
+CFastaReader: Hyphens are invalid and will be ignored around line 442
+CFastaReader: Hyphens are invalid and will be ignored around line 86
+CFastaReader: Hyphens are invalid and will be ignored around line 92
+CFastaReader: Hyphens are invalid and will be ignored around line 158
+CFastaReader: Hyphens are invalid and will be ignored around line 784
+CFastaReader: Hyphens are invalid and will be ignored around line 1000
+CFastaReader: Hyphens are invalid and will be ignored around line 134
+CFastaReader: Hyphens are invalid and will be ignored around line 1046
+CFastaReader: Hyphens are invalid and will be ignored around line 368
+CFastaReader: Hyphens are invalid and will be ignored around line 1214
+CFastaReader: Hyphens are invalid and will be ignored around line 1174
+CFastaReader: Hyphens are invalid and will be ignored around line 42
+CFastaReader: Hyphens are invalid and will be ignored around line 46
+CFastaReader: Hyphens are invalid and will be ignored around line 828
+CFastaReader: Hyphens are invalid and will be ignored around line 994
+CFastaReader: Hyphens are invalid and will be ignored around line 278
+CFastaReader: Hyphens are invalid and will be ignored around line 904
+CFastaReader: Hyphens are invalid and will be ignored around line 920
+CFastaReader: Hyphens are invalid and will be ignored around line 822
+CFastaReader: Hyphens are invalid and will be ignored around line 476
+CFastaReader: Hyphens are invalid and will be ignored around line 26
+CFastaReader: Hyphens are invalid and will be ignored around line 1316
+CFastaReader: Hyphens are invalid and will be ignored around line 1320
+CFastaReader: Hyphens are invalid and will be ignored around line 1258
+CFastaReader: Hyphens are invalid and will be ignored around line 1192
+CFastaReader: Hyphens are invalid and will be ignored around line 968
+CFastaReader: Hyphens are invalid and will be ignored around line 1290
+Warning: [Query 210586-211253] Query_298 210882: Could not calculate ungapped Karlin-Altschul parameters due to an invalid query sequence or its translation. Please verify the query sequence(s) and/or filtering options 
+Traceback (most recent call last):
+  File "<stdin>", line 5, in <module>
+IndexError: list index out of range
